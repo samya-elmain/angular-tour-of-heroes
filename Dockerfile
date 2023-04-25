@@ -12,7 +12,7 @@ RUN npm run build --prod
 
 FROM nginx:1.21.3-alpine
 
-COPY --from=build /app/dist/test /usr/share/nginx/html
+COPY --from=build /app/dist/angular-tour-of-heroes /usr/share/nginx/html
 
 
 
